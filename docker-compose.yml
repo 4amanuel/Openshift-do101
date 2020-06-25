@@ -1,0 +1,15 @@
+version: "3"
+services:
+  node:
+    image: node:latest
+    container_name: openshift-node
+    restart: unless-stopped
+    tty: true
+    working_dir: /home/app
+    ports:
+      - "9090:8000"
+    volumes:
+      - "./app:/home/app"
+    entrypoint: 
+        - node
+        - index.js
