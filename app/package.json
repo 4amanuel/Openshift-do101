@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start":"node index.js",
-    "test": "test"
+    "test": "test",
+    "build": "echo 'hello world'"
   },
   "author": "",
   "license": "ISC",
