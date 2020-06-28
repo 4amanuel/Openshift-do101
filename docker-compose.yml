@@ -6,6 +6,8 @@ services:
     restart: unless-stopped
     tty: true
     working_dir: /home/app
+    environment: 
+         OWM_API_KEY: ad969323b74ab91c6f35e3d3428e18f9
     ports:
       - "9090:8000"
     volumes:
